@@ -17,14 +17,6 @@ function App() {
           className="iframe"
           src="https://embeds.beehiiv.com/0c7500a7-6ab9-480b-8736-873ee23fd5e9?slim=true"
           data-test-id="beehiiv-embed"
-          height="52"
-          frameBorder="0"
-          style={{
-            margin: 0,
-            borderRadius: 0,
-            backgroundColor: 'transparent',
-            width: 400,
-          }}
           />
       </div>
     </div>
