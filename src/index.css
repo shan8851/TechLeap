@@ -27,10 +27,12 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+}
 
   @media (max-width: 850px) {
-    width: 100vw;
+    body {
+      width: 100vw;
+    }
   }
-}
 
 
