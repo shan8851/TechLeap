@@ -1,0 +1,81 @@
+#root {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 2rem;
+
+}
+.App {
+  margin: auto;
+}
+
+.logo {
+  height: 14em;
+}
+
+.content {
+    margin-left: 40px;
+}
+
+.input {
+  border-bottom-left-radius: 12px;
+  border-top-left-radius: 12px;
+  box-sizing: border-box;
+  border-top: 4px solid #1e1e1e;
+  border-bottom: 4px solid #1e1e1e;
+  border-left: 4px solid #1e1e1e;
+  border-right: 2px solid #1e1e1e;
+  padding: 8px 16px;
+  width: 400px;
+  font-size: 32px;
+  cursor: pointer;
+  outline: none;
+}
+
+.button {
+  border-bottom-right-radius: 12px;
+  border-top-right-radius: 12px;
+  border-top: 4px solid #1e1e1e;
+  border-bottom: 4px solid #1e1e1e;
+  border-right: 4px solid #1e1e1e;
+  border-left: 2px solid #1e1e1e;
+  background-color: #eb3f3f;
+  font-weight: 700;
+  padding: 8px 16px;
+  font-size: 32px;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.button:hover {
+  background-color: #EE5959;
+}
+
+.text {
+  font-weight: 500;
+  font-size: 18px;
+  max-width: 600px;
+}
+
+@media (max-width: 850px) {
+  .logo {
+  height: 6em;
+  }
+
+  .text {
+    font-weight: 500;
+    font-size: 14px;
+  }
+
+  .input {
+    width: 200px;
+    font-size: 14px;
+  }
+
+  .button {
+    font-size: 14px;
+  }
+
+  .content {
+    margin-left: 15px;
+  }
+}
