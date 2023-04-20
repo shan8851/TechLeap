@@ -1,19 +1,9 @@
-#root {
-  max-width: 680px;
-  margin: 0 auto;
-  padding: 2rem;
-
-}
-.App {
-  margin: auto;
-}
-
 .logo {
   height: 14em;
 }
 
 .content {
-    margin-left: 40px;
+  margin-left: 40px;
 }
 
 .input {
@@ -31,6 +21,16 @@
   outline: none;
 }
 
+.input_alt {
+  padding: 8px 16px;
+  width: 400px;
+  font-size: 32px;
+  cursor: pointer;
+  outline: none;
+  background-color: #ffffff;
+  color: #1e1e1e;
+}
+
 .button {
   border-bottom-right-radius: 12px;
   border-top-right-radius: 12px;
@@ -46,6 +46,16 @@
   color: #ffffff;
 }
 
+.button_alt {
+  background-color: #eb3f3f;
+  color: #ffffff;
+  width: 400px;
+    font-weight: 700;
+  padding: 8px 16px;
+  font-size: 32px;
+  cursor: pointer;
+  }
+
 .button:hover {
   background-color: #EE5959;
 }
@@ -56,9 +66,88 @@
   max-width: 600px;
 }
 
+.hero {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonials {
+  background: #1e1e1e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.scroll {
+  position: absolute;
+  bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  align-items: center;
+  color: #1e1e1e;
+}
+
+.scroll:hover {
+    color: #eb3f3f;
+  }
+
+
+.subText {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+}
+
+.emoji {
+  font-size: 24px;
+  margin: 0;
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 96px 48px;
+  color:#ffffff
+}
+
+
+.quote {
+  font-weight: 900;
+  font-size: 32px;
+  margin: 0;
+  text-align: center;
+}
+
+.author {
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+  font-style: italic;
+}
+
+.testimonial {
+  max-width: 1000px;
+}
+.flex {
+  display: flex;
+}
 @media (max-width: 850px) {
   .logo {
-  height: 5em;
+    height: 5em;
   }
 
   .text {
@@ -78,20 +167,17 @@
   .content {
     margin-left: 15px;
   }
-}
 
-.iframe {
-  margin: 0;
-  border-radius: 0;
-  background-color: transparent;
-  width: 600px;
-  height: 52px;
-  border: none;
-}
+  .quote {
+    font-size: 14px;
+    font-weight: 700;
+  }
 
-@media (max-width: 850px) {
-  .iframe {
-    width: 300px;
+  .author {
+    font-size: 12px;
+  }
+
+  .testimonials {
+    padding: 24px 12px;
   }
 }
-
