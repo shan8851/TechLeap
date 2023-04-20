@@ -13,10 +13,16 @@ function App() {
   const [email, setEmail] = useState('');
   const [address, setAddress] = useState('');
 
-  const magicLink = `https://magic.beehiiv.com/v1/53ff64cb-69f4-4bc1-9ea4-3c75252cea93?email=${email}&redirect_to=https://techleaphq.com/`
+  const magicLinkEmail = `https://magic.beehiiv.com/v1/53ff64cb-69f4-4bc1-9ea4-3c75252cea93?email=${email}`
+  const magicLinkAddress = `https://magic.beehiiv.com/v1/53ff64cb-69f4-4bc1-9ea4-3c75252cea93?email=${address}`
   const sub = () => {
     if (!email) return
-    window.location.replace(magicLink)
+    window.location.replace(magicLinkEmail)
+  }
+
+  const subTestimonial = () => {
+    if (!address) return
+    window.location.replace(magicLinkAddress)
   }
 
   const Testimonial = ({ quote, author, title }: TestimonialProps) => {
@@ -59,8 +65,8 @@ function App() {
         ))}
         <div className="flex">
           <input placeholder='email address' className="input" type="email"
-          onChange={e => setAddress(e.target.value)} />
-          <button className="button">subscribe</button>
+            onChange={e => setAddress(e.target.value)} />
+          <button onClick={subTestimonial} className="button">subscribe</button>
         </div>
       </div>
     </div>
